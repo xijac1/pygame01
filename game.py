@@ -8,14 +8,15 @@ size = (800,400)
 #variables
 screen = pygame.display.set_mode(size)
 
-test_surface = pygame.image.load('graphics/background01.jpeg')
+test_surface = pygame.image.load('graphics/background01.png')
 
 #set image dimensions
-test_surface = pygame.transform.scale(test_surface, (800,400))
+#test_surface = pygame.transform.scale(test_surface, (800,400))
 
 #window heading
-pygame.display.set_caption("MAZZE")
+pygame.display.set_caption("ZOOMY")
 
+# variable to set fps
 clock = pygame.time.Clock()
 
 #event loop
@@ -31,7 +32,8 @@ while True:
     screen.blit(test_surface,(0,0))
 
 
-    pygame.display.update()     # update everything
+
+    pygame.display.update() # update everything
     clock.tick(60) #limit frames to 60 fps
 
 
